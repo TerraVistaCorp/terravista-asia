@@ -28,6 +28,7 @@ h2 { font-size: 1.25rem; margin: 16px 0 6px; color: var(--accent); }
 .small { font-size: .9rem; color: #4b5563; }
 .footer { text-align: center; font-size: .9rem; padding: 18px; color: #6b7280; }
 .whatsapp { text-decoration: none; }
+.copy-btn { margin-left:8px; font-size: 0.85rem; padding: 6px 10px; border:1px solid #d1d5db; border-radius:8px; background:#fff; cursor:pointer; }
 </style>
 </head>
 <body>
@@ -53,7 +54,7 @@ h2 { font-size: 1.25rem; margin: 16px 0 6px; color: var(--accent); }
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Lead: Quer exportar para a Ásia?">
           <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_autoresponse" value="Recebemos seu pedido de análise. Em até 48h retornaremos com oportunidades na Ásia.">
+          <input type="hidden" name="_next" value="https://terravistacorp.github.io/terravista-asia/obrigado.html">
 
           <label for="nome">Nome</label>
           <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
@@ -82,7 +83,8 @@ h2 { font-size: 1.25rem; margin: 16px 0 6px; color: var(--accent); }
         <h2>📞 Fale com nosso time</h2>
         <p>
           WhatsApp: <a class="whatsapp" href="https://wa.me/5511914824916" target="_blank" rel="noopener">+55 11 9 1482 4916</a><br/>
-          E-mail: <a href="mailto:eduardo@terravistacorp.com">eduardo@terravistacorp.com</a>
+          E-mail: <a id="mailtoLink" href="mailto:eduardo@terravistacorp.com">eduardo@terravistacorp.com</a>
+          <button class="copy-btn" onclick="navigator.clipboard.writeText('eduardo@terravistacorp.com'); this.innerText='Copiado!';">Copiar</button>
         </p>
       </div>
     </div>
